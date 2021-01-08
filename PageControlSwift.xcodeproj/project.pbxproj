@@ -15,6 +15,8 @@
 		1852532B25A835F0009EDD87 /* ViewPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852532A25A835F0009EDD87 /* ViewPager.swift */; };
 		1852532D25A836E8009EDD87 /* CarouselPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852532C25A836E8009EDD87 /* CarouselPageView.swift */; };
 		1852532F25A836F3009EDD87 /* CarouselPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1852532E25A836F3009EDD87 /* CarouselPageView.xib */; };
+		1852533225A843F4009EDD87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852533025A843F4009EDD87 /* HomeViewController.swift */; };
+		1852533325A843F4009EDD87 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1852533125A843F4009EDD87 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1852532A25A835F0009EDD87 /* ViewPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewPager.swift; path = "../../../../../Downloads/communityPlusMisc/Activ Health/Utilities/Custom Components/ViewPager.swift"; sourceTree = "<group>"; };
 		1852532C25A836E8009EDD87 /* CarouselPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPageView.swift; sourceTree = "<group>"; };
 		1852532E25A836F3009EDD87 /* CarouselPageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselPageView.xib; sourceTree = "<group>"; };
+		1852533025A843F4009EDD87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1852533125A843F4009EDD87 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				1852532425A83530009EDD87 /* Info.plist */,
 				1852532C25A836E8009EDD87 /* CarouselPageView.swift */,
 				1852532E25A836F3009EDD87 /* CarouselPageView.xib */,
+				1852533025A843F4009EDD87 /* HomeViewController.swift */,
+				1852533125A843F4009EDD87 /* HomeViewController.xib */,
 			);
 			path = PageControlSwift;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 			files = (
 				1852532325A83530009EDD87 /* LaunchScreen.storyboard in Resources */,
 				1852532025A83530009EDD87 /* Assets.xcassets in Resources */,
+				1852533325A843F4009EDD87 /* HomeViewController.xib in Resources */,
 				1852531E25A8352F009EDD87 /* Main.storyboard in Resources */,
 				1852532F25A836F3009EDD87 /* CarouselPageView.xib in Resources */,
 			);
@@ -145,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1852533225A843F4009EDD87 /* HomeViewController.swift in Sources */,
 				1852532B25A835F0009EDD87 /* ViewPager.swift in Sources */,
 				1852531B25A8352F009EDD87 /* ViewController.swift in Sources */,
 				1852531725A8352E009EDD87 /* AppDelegate.swift in Sources */,

@@ -11,6 +11,8 @@ import UIKit
 class CarouselPageView: UIView {
     
     @IBOutlet weak var carouselImageView: UIImageView!
+    @IBOutlet weak var buttonDone: UIButton!
+    @IBOutlet weak var buttonSkip: UIButton!
     
    static func loadFromNib() -> CarouselPageView{
         return Bundle.main.loadNibNamed("CarouselPageView",

@@ -16,16 +16,44 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BWx-Bi-5EQ">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYh-R1-Wpq">
+                    <rect key="frame" x="30" y="817" width="354" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="lTU-js-jIJ"/>
+                    </constraints>
+                    <state key="normal" title="Go to Home">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPc-5r-Fdh">
+                    <rect key="frame" x="348" y="44" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="Flr-3O-gGa"/>
+                        <constraint firstAttribute="height" constant="30" id="eLN-T8-h6d"/>
+                    </constraints>
+                    <state key="normal" title="Skip">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="BWx-Bi-5EQ" secondAttribute="bottom" id="3dt-9j-qwF"/>
+                <constraint firstItem="jYh-R1-Wpq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GtI-hX-gko"/>
                 <constraint firstItem="BWx-Bi-5EQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HU5-Yi-XtT"/>
+                <constraint firstItem="jYh-R1-Wpq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="HjX-mR-7dr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jYh-R1-Wpq" secondAttribute="trailing" constant="30" id="ONl-y9-LHd"/>
+                <constraint firstItem="HPc-5r-Fdh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="abU-bX-C6t"/>
                 <constraint firstItem="BWx-Bi-5EQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gNn-ne-mHd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HPc-5r-Fdh" secondAttribute="trailing" constant="20" id="gwo-V6-S7r"/>
+                <constraint firstAttribute="bottom" secondItem="jYh-R1-Wpq" secondAttribute="bottom" constant="34" id="mJO-Pz-JhT"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BWx-Bi-5EQ" secondAttribute="trailing" id="taw-mv-Nmh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="buttonDone" destination="jYh-R1-Wpq" id="M9L-AH-B6W"/>
+                <outlet property="buttonSkip" destination="HPc-5r-Fdh" id="i8f-i7-a4c"/>
                 <outlet property="carouselImageView" destination="BWx-Bi-5EQ" id="Xwq-EN-1ba"/>
             </connections>
             <point key="canvasLocation" x="132" y="150"/>

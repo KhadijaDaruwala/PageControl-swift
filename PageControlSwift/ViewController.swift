@@ -16,6 +16,14 @@ class ViewController: UIViewController {
         viewPagination.sizeToFit()
         viewPagination.dataSource = self
     }
+    
+    @objc func goToHomeScreen(){
+        let homeVc = HomeViewController.loadFromNib()
+                appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
+                  appDelegate.window?.rootViewController = UINavigationController(rootViewController: homeVc)
+                  appDelegate.window?.backgroundColor = UIColor.white
+                  appDelegate.window?.makeKeyAndVisible()
+    }
 }
 
 //View pager data source
@@ -26,7 +34,15 @@ extension ViewController:ViewPagerDataSource{
     
     func viewAtIndex(viewPager: ViewPager, index: Int, view: UIView?) -> UIView {
         let carouselView = CarouselPageView.loadFromNib()
+        carouselView.buttonDone.isHidden = true
         carouselView.carouselImageView.image = UIImage(named: "carousel\(index+1)")
+        if index == 3{
+            carouselView.buttonDone.isHidden = false
+        }
+        
+        carouselView.buttonDone.addTarget(self, action: #selector(goToHomeScreen), for: .touchUpInside)
+        carouselView.buttonSkip.addTarget(self, action: #selector(goToHomeScreen), for: .touchUpInside)
+
         return carouselView
     }
     
